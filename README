@@ -1,0 +1,3 @@
+./ contains M2 code for receiving posision and address data over RF and forwarding that over USB
+/gui/ contains the Matlab GUI
+/test/ contains code to make M2 transmit synthetic position data to test the system
