@@ -37,11 +37,13 @@ catch
     return;
 end
 
-load addresses
+% load addresses
+addresses = [4*teams(1):4*teams(1)+3; 4*teams(2):4*teams(2)+3];
 try
-    for i = 1 : numel(teams)
-        for j = 1 : 3
-            fwrite(s, addresses(teams(i), j), 'char');
+    for i = 1 : size(addresses, 1)
+        for j = 1 : size(addresses, 2)
+%             fwrite(s, addresses(teams(i), j), 'char');
+            fwrite(s, addresses(i, j), 'char');
             pause(0.1);
         end
     end
